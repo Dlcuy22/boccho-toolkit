@@ -46,8 +46,9 @@ def main():
     input_folder = "output/no_bg_frames"
     output_folder = "output/outlined_frames"
     outline_width = 10
-    outline_color = (255, 255, 255, 255)
+    # outline_color = (255, 255, 255, 255)
 
+    outline_color = (220, 20, 60, 255)
     input_path = Path(input_folder)
     output_path = Path(output_folder)
     output_path.mkdir(parents=True, exist_ok=True)

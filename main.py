@@ -85,6 +85,11 @@ def main():
         "remove-bg", help="Remove backgrounds from images in input/raw_frames"
     )
 
+    # Command: remove-bg-simple
+    subparsers.add_parser(
+        "remove-bg-simple", help="Open GUI for color-based background removal"
+    )
+
     # Command: apply-outline
     subparsers.add_parser(
         "apply-outline",
@@ -106,6 +111,8 @@ def main():
 
     if args.command == "remove-bg":
         run_script("light_remove_bg.py")
+    elif args.command == "remove-bg-simple":
+        run_script("noai_rembg.py")
     elif args.command == "apply-outline":
         run_script("apply_outline.py")
     elif args.command == "pack":

@@ -1,0 +1,3 @@
+transparent_background
+tqdm
+Pillow
