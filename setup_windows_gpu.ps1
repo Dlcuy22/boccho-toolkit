@@ -5,7 +5,7 @@ $ErrorActionPreference = "Stop"
 
 $venvPath = ".\.venv"
 $activateScript = "$venvPath\Scripts\Activate.ps1"
-$requirementsFile = ".\requirements.txt"
+$requirementsFile = ".\requirements.gpu.txt"
 $pythonVersion = "3.10"    # requested Python version for the venv
 $uvCmd = "uv"
 
